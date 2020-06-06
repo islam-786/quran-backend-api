@@ -86,7 +86,6 @@ class GetTranslationByEditionId(Resource):
     @api.expect(pagination_args, validate=True)
     def get(self, id):
         args = pagination_args.parse_args()
-        print(args)
 
         if args['cursor']:
             translations = Translation.collection.cursor(
