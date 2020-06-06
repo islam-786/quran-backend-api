@@ -20,6 +20,7 @@ class GetAllEditions(Resource):
         return list(editions)
 
 
+@api.param('id', 'ID of the Edition')
 @api.route('/<string:id>')
 class GetEditionById(Resource):
     @api.response(404, 'No edition found related to this id')
