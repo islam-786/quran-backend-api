@@ -1,2 +1,3 @@
 fireo
+Werkzeug==0.16.1
 flask-restplus
