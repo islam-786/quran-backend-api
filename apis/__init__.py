@@ -11,7 +11,7 @@ api = Api(blueprint,
           doc='/docs',
           title='Quran API',
           version='1.0',
-          description='A description',
+          description='The following endpoints are supported by the Quran API v1. They all HTTP GET method and return JSON.',
           )
 
 api.add_namespace(edition_api)
